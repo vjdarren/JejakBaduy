@@ -1,0 +1,250 @@
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Travel Blog
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .join-btn {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero {
+            position: relative;
+            height: 300px;
+            background: url('https://placehold.co/1200x300') no-repeat center center/cover;
+        }
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content .post-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .content .post-header .rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .content .post-header .rating i {
+            color: #ffcc00;
+        }
+        .content .post-header .location a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .content .post-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .content .post-category {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .content .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .content .post-details {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .content .review-section {
+            margin-bottom: 40px;
+        }
+        .content .review-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .content .review-section .review-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .content .review-section .review-form input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .content .review-section .review-form button {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content .comments {
+            margin-bottom: 40px;
+        }
+        .content .comments .comment {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .content .comments .comment img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .content .comments .comment .comment-body {
+            flex: 1;
+        }
+        .content .comments .comment .comment-body .comment-author {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .content .comments .comment .comment-body .comment-text {
+            margin-bottom: 5px;
+        }
+        .content .comments .comment .comment-body .comment-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .content .related-posts {
+            margin-bottom: 40px;
+        }
+        .content .related-posts h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content .related-posts .post-list {
+            display: flex;
+            gap: 20px;
+        }
+        .content .related-posts .post-item {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content .related-posts .post-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .content .related-posts .post-item .post-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .content .related-posts .post-item .post-category {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .content .related-posts .post-item .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+  </style>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container">
+    <div class="logo">
+     Travel Time
+    </div>
+    <nav>
+     <a href="#">
+      Home
+     </a>
+     <a href="#">
+      About Us
+     </a>
+     <a href="#">
+      Services
+     </a>
+     <a href="#">
+      Clients
+     </a>
+     <a href="#">
+      Blog
+     </a>
+     <a href="#">
+      Contact Us
+     </a>
+    </nav>
+    <button class="join-btn">
+     Join With Us
+    </button>
+   </div>
+  </header>
+  <section class="hero">
+   <div class="overlay">
+    Home / blog / single_blog
+   </div>
+  </section>
+  
